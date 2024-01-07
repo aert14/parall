@@ -4,7 +4,11 @@ from typing import Coroutine
 
 import pytest
 
-from homework.tasks.task_6 import AbstractLongTaskCreator, FastHandlerWithLongBackgroundTask, BackgroundCoroutinesWatcher
+from homework.tasks.task_6 import (
+    AbstractLongTaskCreator,
+    BackgroundCoroutinesWatcher,
+    FastHandlerWithLongBackgroundTask,
+)
 
 
 class SleepingTaskCreator(AbstractLongTaskCreator):
