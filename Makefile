@@ -4,3 +4,5 @@ init:
 
 test:
 	poetry run pytest -sv homework/tests
+test_task_%:
+	poetry run pytest -sv homework/tests/test_task_$*.py
